@@ -52,7 +52,7 @@ export const App = () => {
             <TaskForm user={user} />
 
             <div className='filter'>
-              <button onClick={() => setHideCompleted(hideCompleted)}>
+              <button onClick={() => setHideCompleted(!hideCompleted)}>
                 {hideCompleted ? 'Show All' : 'Hide Completed'}
               </button>
             </div>
